@@ -9,9 +9,13 @@
 
 #import <Foundation/Foundation.h>
 
+#if __has_include(<Bolts/BFTask.h>)
 #import <Bolts/BFTask.h>
+#else
+#import "BFTask.h"
+#endif
 
-#import <Parse/PFConstants.h>
+#import "PFConstants.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

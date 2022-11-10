@@ -12,8 +12,13 @@
 #import "PFUser+Synchronous.h"
 #import "PFObject+Synchronous.h"
 
+#if __has_include(<Bolts/BFExecutor.h>)
 #import <Bolts/BFExecutor.h>
 #import <Bolts/BFTaskCompletionSource.h>
+#else
+#import "BFExecutor.h"
+#import "BFTaskCompletionSource.h"
+#endif
 
 #import "BFTask+Private.h"
 #import "PFACLPrivate.h"

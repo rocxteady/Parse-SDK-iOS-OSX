@@ -12,8 +12,13 @@
 #import "PFQuery+Synchronous.h"
 #import "PFQuery+Deprecated.h"
 
+#if __has_include(<Bolts/BFCancellationTokenSource.h>)
 #import <Bolts/BFCancellationTokenSource.h>
 #import <Bolts/BFTask.h>
+#else
+#import "BFCancellationTokenSource.h"
+#import "BFTask.h"
+#endif
 
 #import "BFTask+Private.h"
 #import "PFAssert.h"

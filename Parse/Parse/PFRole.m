@@ -9,7 +9,11 @@
 
 #import "PFRole.h"
 
+#if __has_include(<Bolts/BFTask.h>)
 #import <Bolts/BFTask.h>
+#else
+#import "BFTask.h"
+#endif
 
 #import "PFAssert.h"
 #import "PFObject+Subclass.h"
