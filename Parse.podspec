@@ -20,28 +20,28 @@ Pod::Spec.new do |s|
   s.subspec 'Core' do |s|
     s.requires_arc = true
 
-    s.source_files = 'Parse/Parse/*.{h,m}',
+    s.source_files = 'Parse/Parse/Source/*.{h,m}',
                      'Parse/Parse/Internal/**/*.{h,m}'
-    s.public_header_files = 'Parse/Parse/*.h'
+    s.public_header_files = 'Parse/Parse/Source/*.h'
     s.private_header_files = 'Parse/Parse/Internal/**/*.h'
 
     s.ios.exclude_files = 'Parse/Parse/Internal/PFMemoryEventuallyQueue.{h,m}'
-    s.osx.exclude_files = 'Parse/Parse/PFNetworkActivityIndicatorManager.{h,m}',
-                          'Parse/Parse/PFProduct.{h,m}',
-                          'Parse/Parse/PFPurchase.{h,m}',
+    s.osx.exclude_files = 'Parse/Parse/Source/PFNetworkActivityIndicatorManager.{h,m}',
+                          'Parse/Parse/Source/PFProduct.{h,m}',
+                          'Parse/Parse/Source/PFPurchase.{h,m}',
                           'Parse/Parse/Internal/PFAlertView.{h,m}',
                           'Parse/Parse/Internal/Product/**/*.{h,m}',
                           'Parse/Parse/Internal/Purchase/**/*.{h,m}',
                           'Parse/Parse/Internal/PFMemoryEventuallyQueue.{h,m}'
-    s.tvos.exclude_files = 'Parse/Parse/PFNetworkActivityIndicatorManager.{h,m}',
+    s.tvos.exclude_files = 'Parse/Parse/Source/PFNetworkActivityIndicatorManager.{h,m}',
                            'Parse/Parse/Internal/PFAlertView.{h,m}'
-    s.watchos.exclude_files = 'Parse/Parse/PFNetworkActivityIndicatorManager.{h,m}',
-                              'Parse/Parse/PFProduct.{h,m}',
-                              'Parse/Parse/PFPurchase.{h,m}',
-                              'Parse/Parse/PFPush.{h,m}',
-                              'Parse/Parse/PFPush+Synchronous.{h,m}',
-                              'Parse/Parse/PFPush+Deprecated.{h,m}',
-                              'Parse/Parse/PFInstallation.{h,m}',
+    s.watchos.exclude_files = 'Parse/Parse/Source/PFNetworkActivityIndicatorManager.{h,m}',
+                              'Parse/Parse/Source/PFProduct.{h,m}',
+                              'Parse/Parse/Source/PFPurchase.{h,m}',
+                              'Parse/Parse/Source/PFPush.{h,m}',
+                              'Parse/Parse/Source/PFPush+Synchronous.{h,m}',
+                              'Parse/Parse/Source/PFPush+Deprecated.{h,m}',
+                              'Parse/Parse/Source/PFInstallation.{h,m}',
                               'Parse/Parse/Internal/PFAlertView.{h,m}',
                               'Parse/Parse/Internal/PFReachability.{h,m}',
                               'Parse/Parse/Internal/Product/**/*.{h,m}',
@@ -80,16 +80,15 @@ Pod::Spec.new do |s|
 
     s.libraries        = 'z', 'sqlite3'
 
-    s.dependency 'Bolts/Tasks', '1.9.1'
+    s.dependency 'Bolts/Tasks', '1.9.2'
   end
 
   s.subspec 'FacebookUtils' do |s|
-    s.platform = :ios
-    s.ios.deployment_target = '9.0'
-    s.public_header_files = 'ParseFacebookUtils/ParseFacebookUtils/*.h'
-    s.source_files = 'ParseFacebookUtils/ParseFacebookUtils/**/*.{h,m}'
-    s.exclude_files = 'ParseFacebookUtils/ParseFacebookUtils/ParseFacebookUtilsV4.h',
-                      'ParseFacebookUtils/ParseFacebookUtils/Internal/AuthenticationProvider/tvOS/**/*.{h,m}'
+    s.platform = :ios, :tvos
+    s.ios.deployment_target = '11.0'
+    s.tvos.deployment_target = '11.0'
+    s.public_header_files = 'ParseFacebookUtils/ParseFacebookUtils/Source/*.h'
+    s.source_files = 'ParseFacebookUtils/ParseFacebookUtils/Source/*.{h,m}'
 
     s.frameworks        = 'AudioToolbox',
                           'CFNetwork',
@@ -103,18 +102,44 @@ Pod::Spec.new do |s|
     s.libraries        = 'z', 'sqlite3'
 
     s.dependency 'Parse/Core'
-    s.dependency 'Bolts/Tasks', '~> 1.9.1'
-    s.dependency 'FBSDKCoreKit', '= 11.0.1'
-    s.dependency 'FBSDKLoginKit', '= 11.0.1'
+    s.dependency 'Bolts/Tasks', '1.9.2'
+    s.dependency 'FBSDKCoreKit', '= 13.2.0'
+    s.dependency 'FBSDKLoginKit', '= 13.2.0'
+  end
+
+  s.subspec 'FacebookUtils-iOS' do |s|
+    s.platform = :ios
+    s.ios.deployment_target = '11.0'
+    s.public_header_files = 'ParseFacebookUtilsiOS/ParseFacebookUtilsiOS/Source/*.h'
+    s.private_header_files = 'ParseFacebookUtilsiOS/ParseFacebookUtilsiOS/Internal/**/*.h'
+    s.source_files = 'ParseFacebookUtilsiOS/ParseFacebookUtilsiOS/Source/*.{h,m}',
+                     'ParseFacebookUtilsiOS/ParseFacebookUtilsiOS/Internal/**/*.{h,m}'
+
+    s.frameworks        = 'AudioToolbox',
+                          'CFNetwork',
+                          'CoreGraphics',
+                          'CoreLocation',
+                          'QuartzCore',
+                          'Security',
+                          'SystemConfiguration'
+    s.ios.weak_frameworks = 'Accounts',
+                            'Social'
+    s.libraries        = 'z', 'sqlite3'
+
+    s.dependency 'Parse/Core'
+    s.dependency 'Parse/FacebookUtils'
+    s.dependency 'Bolts/Tasks', '1.9.2'
+    s.dependency 'FBSDKCoreKit', '= 13.2.0'
+    s.dependency 'FBSDKLoginKit', '= 13.2.0'
   end
 
   s.subspec 'FacebookUtils-tvOS' do |s|
     s.platform = :tvos
-    s.tvos.deployment_target = '10.0'
-    s.public_header_files = 'ParseFacebookUtils/ParseFacebookUtils/*.h'
-    s.source_files = 'ParseFacebookUtils/ParseFacebookUtils/**/*.{h,m}'
-    s.exclude_files = 'ParseFacebookUtils/ParseFacebookUtils/ParseFacebookUtilsV4.h',
-                      'ParseFacebookUtils/ParseFacebookUtils/Internal/AuthenticationProvider/iOS/**/*.{h,m}'
+    s.tvos.deployment_target = '11.0'
+    s.public_header_files = 'ParseFacebookUtilsTvOS/ParseFacebookUtilsTvOS/Source/*.h'
+    s.private_header_files = 'ParseFacebookUtilsTvOS/ParseFacebookUtilsTvOS/Internal/*.h'
+    s.source_files = 'ParseFacebookUtilsTvOS/ParseFacebookUtilsTvOS/Source/*.{h,m}',
+                     'ParseFacebookUtilsTvOS/ParseFacebookUtilsTvOS/Internal/*.{h,m}'
 
     s.frameworks        = 'AudioToolbox',
                           'CFNetwork',
@@ -126,9 +151,10 @@ Pod::Spec.new do |s|
     s.libraries        = 'z', 'sqlite3'
 
     s.dependency 'Parse/Core'
-    s.dependency 'Bolts/Tasks', '~> 1.9.1'
-    s.dependency 'FBSDKTVOSKit', '= 11.0'
-    s.dependency 'FBSDKShareKit', '= 11.0.1'
+    s.dependency 'Parse/FacebookUtils'
+    s.dependency 'Bolts/Tasks', '1.9.2'
+    s.dependency 'FBSDKTVOSKit', '= 13.2.0'
+    s.dependency 'FBSDKShareKit', '= 13.2.0'
   end
 
   s.subspec 'TwitterUtils' do |s|
