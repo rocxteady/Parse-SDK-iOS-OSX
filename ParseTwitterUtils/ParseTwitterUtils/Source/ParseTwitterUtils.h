@@ -7,5 +7,5 @@
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 
-#import <ParseTwitterUtils/PFTwitterUtils.h>
-#import <ParseTwitterUtils/PF_Twitter.h>
+#import "PFTwitterUtils.h"
+#import "PF_Twitter.h"

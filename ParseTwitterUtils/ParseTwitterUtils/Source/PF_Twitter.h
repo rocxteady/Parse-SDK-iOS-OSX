@@ -9,7 +9,11 @@
 
 #import <Foundation/Foundation.h>
 
+#if __has_include(<Parse/PFConstants.h>)
 #import <Parse/PFConstants.h>
+#else
+#import "PFConstants.h"
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

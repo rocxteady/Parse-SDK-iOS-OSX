@@ -14,10 +14,19 @@
 #import <Social/Social.h>
 #import <Twitter/Twitter.h>
 
+#if __has_include(<Bolts/BFExecutor.h>)
 #import <Bolts/BFExecutor.h>
 #import <Bolts/BFTaskCompletionSource.h>
+#else
+#import "BFExecutor.h"
+#import "BFTaskCompletionSource.h"
+#endif
 
+#if __has_include(<Parse/PFConstants.h>)
 #import <Parse/PFConstants.h>
+#else
+#import "PFConstants.h"
+#endif
 
 #import "PFOAuth1FlowDialog.h"
 #import "PFTwitterAlertView.h"

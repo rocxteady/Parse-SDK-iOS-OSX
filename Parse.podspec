@@ -85,8 +85,8 @@ Pod::Spec.new do |s|
 
   s.subspec 'FacebookUtils' do |s|
     s.platform = :ios, :tvos
-    s.ios.deployment_target = '11.0'
-    s.tvos.deployment_target = '11.0'
+    s.ios.deployment_target = '12.0'
+    s.tvos.deployment_target = '12.0'
     s.public_header_files = 'ParseFacebookUtils/ParseFacebookUtils/Source/*.h'
     s.source_files = 'ParseFacebookUtils/ParseFacebookUtils/Source/*.{h,m}'
 
@@ -103,13 +103,13 @@ Pod::Spec.new do |s|
 
     s.dependency 'Parse/Core'
     s.dependency 'Bolts/Tasks', '1.9.2'
-    s.dependency 'FBSDKCoreKit', '= 13.2.0'
-    s.dependency 'FBSDKLoginKit', '= 13.2.0'
+    s.dependency 'FBSDKCoreKit', '= 15.1.0'
+    s.dependency 'FBSDKLoginKit', '= 15.1.0'
   end
 
   s.subspec 'FacebookUtils-iOS' do |s|
     s.platform = :ios
-    s.ios.deployment_target = '11.0'
+    s.ios.deployment_target = '12.0'
     s.public_header_files = 'ParseFacebookUtilsiOS/ParseFacebookUtilsiOS/Source/*.h'
     s.private_header_files = 'ParseFacebookUtilsiOS/ParseFacebookUtilsiOS/Internal/**/*.h'
     s.source_files = 'ParseFacebookUtilsiOS/ParseFacebookUtilsiOS/Source/*.{h,m}',
@@ -129,13 +129,13 @@ Pod::Spec.new do |s|
     s.dependency 'Parse/Core'
     s.dependency 'Parse/FacebookUtils'
     s.dependency 'Bolts/Tasks', '1.9.2'
-    s.dependency 'FBSDKCoreKit', '= 13.2.0'
-    s.dependency 'FBSDKLoginKit', '= 13.2.0'
+    s.dependency 'FBSDKCoreKit', '= 15.1.0'
+    s.dependency 'FBSDKLoginKit', '= 15.1.0'
   end
 
   s.subspec 'FacebookUtils-tvOS' do |s|
     s.platform = :tvos
-    s.tvos.deployment_target = '11.0'
+    s.tvos.deployment_target = '12.0'
     s.public_header_files = 'ParseFacebookUtilsTvOS/ParseFacebookUtilsTvOS/Source/*.h'
     s.private_header_files = 'ParseFacebookUtilsTvOS/ParseFacebookUtilsTvOS/Internal/*.h'
     s.source_files = 'ParseFacebookUtilsTvOS/ParseFacebookUtilsTvOS/Source/*.{h,m}',
@@ -153,16 +153,17 @@ Pod::Spec.new do |s|
     s.dependency 'Parse/Core'
     s.dependency 'Parse/FacebookUtils'
     s.dependency 'Bolts/Tasks', '1.9.2'
-    s.dependency 'FBSDKTVOSKit', '= 13.2.0'
-    s.dependency 'FBSDKShareKit', '= 13.2.0'
+    s.dependency 'FBSDKTVOSKit', '= 15.1.0'
+    s.dependency 'FBSDKShareKit', '= 15.1.0'
   end
 
   s.subspec 'TwitterUtils' do |s|
     s.platform = :ios
-    s.public_header_files = 'ParseTwitterUtils/ParseTwitterUtils/*.h'
-    s.source_files = 'ParseTwitterUtils/ParseTwitterUtils/**/*.{h,m}'
-    s.exclude_files = 'ParseTwitterUtils/ParseTwitterUtils/ParseTwitterUtils.h'
-    s.resource_bundle = { 'TwitterUtils' => 'ParseTwitterUtils/Resources/en.lproj' }
+    s.public_header_files = 'ParseTwitterUtils/ParseTwitterUtils/Source/*.h'
+    s.source_files = 'ParseTwitterUtils/ParseTwitterUtils/Source/*.{h,m}',
+                     'ParseTwitterUtils/ParseTwitterUtils/Internal/**/*.{h,m}'
+    s.private_header_files = 'ParseTwitterUtils/ParseTwitterUtils/Internal/**/*.h'
+    s.resource_bundle = { 'TwitterUtils' => 'ParseTwitterUtils/ParseTwitterUtils/Resources/en.lproj' }
     s.frameworks        = 'AudioToolbox',
                           'CFNetwork',
                           'CoreGraphics',

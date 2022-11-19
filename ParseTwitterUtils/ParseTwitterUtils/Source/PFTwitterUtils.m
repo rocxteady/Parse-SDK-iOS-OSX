@@ -9,10 +9,19 @@
 
 #import "PFTwitterUtils.h"
 
+#if __has_include(<Bolts/BFExecutor.h>)
 #import <Bolts/BFExecutor.h>
 #import <Bolts/BFTaskCompletionSource.h>
+#else
+#import "BFExecutor.h"
+#import "BFTaskCompletionSource.h"
+#endif
 
+#if __has_include(<Parse/Parse.h>)
 #import <Parse/Parse.h>
+#else
+#import "Parse.h"
+#endif
 
 #import "PFTwitterAuthenticationProvider.h"
 #import "PFTwitterPrivateUtilities.h"
