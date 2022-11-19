@@ -17,7 +17,6 @@
 #import "BFTaskCompletionSource.h"
 #endif
 
-#import <FBSDKCoreKit/FBSDKApplicationDelegate.h>
 #import <FBSDKCoreKit/FBSDKAccessToken.h>
 #import <FBSDKCoreKit/FBSDKConstants.h>
 #import <FBSDKTVOSKit/FBSDKDeviceLoginViewController.h>
