@@ -13,7 +13,7 @@
 #import "PFFacebookUtils.h"
 #endif
 
-#import <FBSDKLoginKit/FBSDKLoginManager.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @interface PFFacebookUtilsDevice : PFFacebookUtils
 
@@ -41,6 +41,6 @@
 
  @return An instance of `FBSDKLoginManager` that is used by `PFFacebookUtils`.
  */
-+ (FBSDKLoginManager *)facebookLoginManager;
++ ( FBSDKLoginManager * _Nonnull)facebookLoginManager;
 
 @end

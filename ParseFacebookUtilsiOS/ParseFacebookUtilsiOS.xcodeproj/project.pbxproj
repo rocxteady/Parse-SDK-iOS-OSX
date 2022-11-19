@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -33,6 +33,16 @@
 		7C5F7EDE29211E6A0035B219 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5F7EDD29211E6A0035B219 /* SystemConfiguration.framework */; };
 		7C5F7EE029211E6E0035B219 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5F7EDF29211E6E0035B219 /* AudioToolbox.framework */; };
 		7C5F7EE229211E870035B219 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5F7EE129211E870035B219 /* Accelerate.framework */; };
+		7C77D047292913DC00C4D90E /* FBAEMKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C77D045292913CF00C4D90E /* FBAEMKit.xcframework */; };
+		7C77D048292913DC00C4D90E /* FBSDKCoreKit_Basics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C77D03C292913CF00C4D90E /* FBSDKCoreKit_Basics.xcframework */; };
+		7C77D049292913DC00C4D90E /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C77D044292913CF00C4D90E /* FBSDKCoreKit.xcframework */; };
+		7C77D04A292913DC00C4D90E /* FBSDKLoginKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C77D046292913CF00C4D90E /* FBSDKLoginKit.xcframework */; };
+		7C77D04C292913EC00C4D90E /* FBAEMKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C77D045292913CF00C4D90E /* FBAEMKit.xcframework */; };
+		7C77D04D292913EC00C4D90E /* FBSDKCoreKit_Basics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C77D03C292913CF00C4D90E /* FBSDKCoreKit_Basics.xcframework */; };
+		7C77D04E292913EC00C4D90E /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C77D044292913CF00C4D90E /* FBSDKCoreKit.xcframework */; };
+		7C77D04F292913EC00C4D90E /* FBSDKLoginKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C77D046292913CF00C4D90E /* FBSDKLoginKit.xcframework */; };
+		7C77D0512929156900C4D90E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C77D0502929156900C4D90E /* libc++.tbd */; };
+		7C77D0532929157600C4D90E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C77D0522929157600C4D90E /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +185,12 @@
 		7C5F7EDD29211E6A0035B219 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7C5F7EDF29211E6E0035B219 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		7C5F7EE129211E870035B219 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		7C77D03C292913CF00C4D90E /* FBSDKCoreKit_Basics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBSDKCoreKit_Basics.xcframework; path = ../Carthage/Build/FBSDKCoreKit_Basics.xcframework; sourceTree = "<group>"; };
+		7C77D044292913CF00C4D90E /* FBSDKCoreKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBSDKCoreKit.xcframework; path = ../Carthage/Build/FBSDKCoreKit.xcframework; sourceTree = "<group>"; };
+		7C77D045292913CF00C4D90E /* FBAEMKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBAEMKit.xcframework; path = ../Carthage/Build/FBAEMKit.xcframework; sourceTree = "<group>"; };
+		7C77D046292913CF00C4D90E /* FBSDKLoginKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBSDKLoginKit.xcframework; path = ../Carthage/Build/FBSDKLoginKit.xcframework; sourceTree = "<group>"; };
+		7C77D0502929156900C4D90E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.1.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+		7C77D0522929157600C4D90E /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.1.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		7CACE61A291EA74D003359B5 /* ParseFacebookUtilsiOS-Dynamic.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ParseFacebookUtilsiOS-Dynamic.xcconfig"; sourceTree = "<group>"; };
 		7CACE61B291EA74D003359B5 /* ParseFacebookUtilsiOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ParseFacebookUtilsiOS.xcconfig; sourceTree = "<group>"; };
 		7CACE61E291EA75A003359B5 /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
@@ -208,6 +224,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C77D0532929157600C4D90E /* Accelerate.framework in Frameworks */,
+				7C77D0512929156900C4D90E /* libc++.tbd in Frameworks */,
+				7C77D04C292913EC00C4D90E /* FBAEMKit.xcframework in Frameworks */,
+				7C77D04D292913EC00C4D90E /* FBSDKCoreKit_Basics.xcframework in Frameworks */,
+				7C77D04E292913EC00C4D90E /* FBSDKCoreKit.xcframework in Frameworks */,
+				7C77D04F292913EC00C4D90E /* FBSDKLoginKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +250,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C77D047292913DC00C4D90E /* FBAEMKit.xcframework in Frameworks */,
+				7C77D048292913DC00C4D90E /* FBSDKCoreKit_Basics.xcframework in Frameworks */,
+				7C77D049292913DC00C4D90E /* FBSDKCoreKit.xcframework in Frameworks */,
+				7C77D04A292913DC00C4D90E /* FBSDKLoginKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,11 +294,17 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7C77D0522929157600C4D90E /* Accelerate.framework */,
+				7C77D0502929156900C4D90E /* libc++.tbd */,
 				7C5F7EE129211E870035B219 /* Accelerate.framework */,
 				7C5F7EDF29211E6E0035B219 /* AudioToolbox.framework */,
 				7C5F7EDD29211E6A0035B219 /* SystemConfiguration.framework */,
 				7C5F7EDB29211E640035B219 /* libc++.tbd */,
 				7C5F7ED929211E5E0035B219 /* libsqlite3.tbd */,
+				7C77D045292913CF00C4D90E /* FBAEMKit.xcframework */,
+				7C77D03C292913CF00C4D90E /* FBSDKCoreKit_Basics.xcframework */,
+				7C77D044292913CF00C4D90E /* FBSDKCoreKit.xcframework */,
+				7C77D046292913CF00C4D90E /* FBSDKLoginKit.xcframework */,
 				7C5F7E99292119EA0035B219 /* OCMock.xcodeproj */,
 				7C5F7E3929210E580035B219 /* ParseFacebookUtils.xcodeproj */,
 			);
@@ -849,7 +881,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Carthage/Build",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/ParseFacebookUtilsiOS/Resources/Info-iOS.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.parse.facebookutilsios;
@@ -866,7 +901,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Carthage/Build",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/ParseFacebookUtilsiOS/Resources/Info-iOS.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.parse.facebookutilsios;
@@ -918,10 +956,17 @@
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Carthage/Build",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/ParseFacebookUtilsiOS/Resources/Info-iOS.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.parse.facebookutilsios;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -941,10 +986,17 @@
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Carthage/Build",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/ParseFacebookUtilsiOS/Resources/Info-iOS.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.parse.facebookutilsios;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -994,7 +1046,10 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Tests/TestApplication/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.parse.facebookutilsios.unit.app;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -1009,7 +1064,10 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Tests/TestApplication/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.parse.facebookutilsios.unit.app;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;

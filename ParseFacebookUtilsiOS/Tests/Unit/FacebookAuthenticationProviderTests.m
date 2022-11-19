@@ -10,7 +10,7 @@
 @import Bolts.BFTask;
 
 @import FBSDKCoreKit.FBSDKAccessToken;
-@import FBSDKLoginKit.FBSDKLoginManagerLoginResult;
+@import FBSDKLoginKit;
 
 #import "PFFacebookMobileAuthenticationProvider_Private.h"
 #import "PFFacebookTestCase.h"
