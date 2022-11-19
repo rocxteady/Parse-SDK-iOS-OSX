@@ -39,6 +39,18 @@
 		7C5F7DF4292105800035B219 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5F7DF3292105800035B219 /* libc++.tbd */; };
 		7C5F7DF6292105880035B219 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5F7DF5292105880035B219 /* Accelerate.framework */; };
 		7C5F7DF9292106B90035B219 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F7D26292101370035B219 /* File.swift */; };
+		7C77D01C2929115F00C4D90E /* FBAEMKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C78240329290C9B00E9364E /* FBAEMKit.xcframework */; };
+		7C77D01D2929115F00C4D90E /* FBSDKCoreKit_Basics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C78240129290C9A00E9364E /* FBSDKCoreKit_Basics.xcframework */; };
+		7C77D01E2929115F00C4D90E /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C78240029290C9A00E9364E /* FBSDKCoreKit.xcframework */; };
+		7C77D01F2929115F00C4D90E /* FBSDKTVOSKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C77D01B2929114E00C4D90E /* FBSDKTVOSKit.xcframework */; };
+		7C77D0222929118500C4D90E /* FBAEMKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C78240329290C9B00E9364E /* FBAEMKit.xcframework */; };
+		7C77D0232929118500C4D90E /* FBSDKCoreKit_Basics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C78240129290C9A00E9364E /* FBSDKCoreKit_Basics.xcframework */; };
+		7C77D0242929118500C4D90E /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C78240029290C9A00E9364E /* FBSDKCoreKit.xcframework */; };
+		7C77D0252929118500C4D90E /* FBSDKLoginKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C78240229290C9B00E9364E /* FBSDKLoginKit.xcframework */; };
+		7C77D0282929119500C4D90E /* FBAEMKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C78240329290C9B00E9364E /* FBAEMKit.xcframework */; };
+		7C77D0292929119500C4D90E /* FBSDKCoreKit_Basics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C78240129290C9A00E9364E /* FBSDKCoreKit_Basics.xcframework */; };
+		7C77D02A2929119500C4D90E /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C78240029290C9A00E9364E /* FBSDKCoreKit.xcframework */; };
+		7C77D02B2929119500C4D90E /* FBSDKTVOSKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C77D01B2929114E00C4D90E /* FBSDKTVOSKit.xcframework */; };
 		7C78240429290CA600E9364E /* FBAEMKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C78240329290C9B00E9364E /* FBAEMKit.xcframework */; };
 		7C78240529290CA600E9364E /* FBSDKCoreKit_Basics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C78240129290C9A00E9364E /* FBSDKCoreKit_Basics.xcframework */; };
 		7C78240629290CA600E9364E /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C78240029290C9A00E9364E /* FBSDKCoreKit.xcframework */; };
@@ -123,6 +135,27 @@
 			remoteGlobalIDString = 81C3821B19CCA89E0066284A;
 			remoteInfo = "Parse-iOS";
 		};
+		7C77D0192929110300C4D90E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C77CFA529290F4000C4D90E /* Parse.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 815F22AF1BD04D150054659F;
+			remoteInfo = "Parse-tvOS";
+		};
+		7C77D0202929117E00C4D90E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C77CFA529290F4000C4D90E /* Parse.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 81C582E11C3B0A98000063C6;
+			remoteInfo = "Parse-iOS-Dynamic";
+		};
+		7C77D0262929118E00C4D90E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C77CFA529290F4000C4D90E /* Parse.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 81C5845F1C3B0AA1000063C6;
+			remoteInfo = "Parse-tvOS-Dynamic";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -167,6 +200,7 @@
 		7C5F7DF3292105800035B219 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.1.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
 		7C5F7DF5292105880035B219 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.1.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		7C77CFA529290F4000C4D90E /* Parse.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Parse.xcodeproj; path = ../Parse/Parse.xcodeproj; sourceTree = "<group>"; };
+		7C77D01B2929114E00C4D90E /* FBSDKTVOSKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBSDKTVOSKit.xcframework; path = ../Carthage/Build/FBSDKTVOSKit.xcframework; sourceTree = "<group>"; };
 		7C78240029290C9A00E9364E /* FBSDKCoreKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBSDKCoreKit.xcframework; path = ../Carthage/Build/FBSDKCoreKit.xcframework; sourceTree = "<group>"; };
 		7C78240129290C9A00E9364E /* FBSDKCoreKit_Basics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBSDKCoreKit_Basics.xcframework; path = ../Carthage/Build/FBSDKCoreKit_Basics.xcframework; sourceTree = "<group>"; };
 		7C78240229290C9B00E9364E /* FBSDKLoginKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBSDKLoginKit.xcframework; path = ../Carthage/Build/FBSDKLoginKit.xcframework; sourceTree = "<group>"; };
@@ -194,6 +228,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C77D0222929118500C4D90E /* FBAEMKit.xcframework in Frameworks */,
+				7C77D0232929118500C4D90E /* FBSDKCoreKit_Basics.xcframework in Frameworks */,
+				7C77D0242929118500C4D90E /* FBSDKCoreKit.xcframework in Frameworks */,
+				7C77D0252929118500C4D90E /* FBSDKLoginKit.xcframework in Frameworks */,
 				7C5F7DF6292105880035B219 /* Accelerate.framework in Frameworks */,
 				7C5F7DF4292105800035B219 /* libc++.tbd in Frameworks */,
 			);
@@ -203,6 +241,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C77D0282929119500C4D90E /* FBAEMKit.xcframework in Frameworks */,
+				7C77D0292929119500C4D90E /* FBSDKCoreKit_Basics.xcframework in Frameworks */,
+				7C77D02A2929119500C4D90E /* FBSDKCoreKit.xcframework in Frameworks */,
+				7C77D02B2929119500C4D90E /* FBSDKTVOSKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +252,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C77D01C2929115F00C4D90E /* FBAEMKit.xcframework in Frameworks */,
+				7C77D01D2929115F00C4D90E /* FBSDKCoreKit_Basics.xcframework in Frameworks */,
+				7C77D01E2929115F00C4D90E /* FBSDKCoreKit.xcframework in Frameworks */,
+				7C77D01F2929115F00C4D90E /* FBSDKTVOSKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +305,7 @@
 				7C78240129290C9A00E9364E /* FBSDKCoreKit_Basics.xcframework */,
 				7C78240029290C9A00E9364E /* FBSDKCoreKit.xcframework */,
 				7C78240229290C9B00E9364E /* FBSDKLoginKit.xcframework */,
+				7C77D01B2929114E00C4D90E /* FBSDKTVOSKit.xcframework */,
 				7C77CFA529290F4000C4D90E /* Parse.xcodeproj */,
 			);
 			name = Frameworks;
@@ -432,7 +479,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AAEAA72200C020E00AA7479 /* Build configuration list for PBXNativeTarget "ParseFacebookUtilsV4-iOS-Dynamic" */;
 			buildPhases = (
-				4A13525320282699000F5FD5 /* Cleanup Vendored Static lib */,
 				4AAEAA5D200C020E00AA7479 /* Generate Localizable Strings */,
 				4AAEAA5E200C020E00AA7479 /* Headers */,
 				4AAEAA66200C020E00AA7479 /* Sources */,
@@ -443,6 +489,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				7C77D0212929117E00C4D90E /* PBXTargetDependency */,
 			);
 			name = "ParseFacebookUtilsV4-iOS-Dynamic";
 			packageProductDependencies = (
@@ -455,7 +502,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AAEAA8D200C022300AA7479 /* Build configuration list for PBXNativeTarget "ParseFacebookUtilsV4-tvOS-Dynamic" */;
 			buildPhases = (
-				4A135254202826D8000F5FD5 /* ShellScript */,
 				4AAEAA79200C022300AA7479 /* Generate Localizable Strings */,
 				4AAEAA7A200C022300AA7479 /* Headers */,
 				4AAEAA81200C022300AA7479 /* Sources */,
@@ -466,6 +512,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				7C77D0272929118E00C4D90E /* PBXTargetDependency */,
 			);
 			name = "ParseFacebookUtilsV4-tvOS-Dynamic";
 			packageProductDependencies = (
@@ -488,6 +535,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				7C77D01A2929110300C4D90E /* PBXTargetDependency */,
 			);
 			name = "ParseFacebookUtilsV4-tvOS";
 			productName = Breakpad;
@@ -684,7 +732,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ ! -d $SRCROOT/Vendor ]; then\nmkdir $SRCROOT/Vendor\nfi\n\ncd $SRCROOT/Vendor\n\nif [[ ! -d \"FBSDKCoreKit.xcframework\" || ! -d \"FBSDKTVOSKit.xcframework\" ]]; then\nARCHIVE_NAME=FBSDK.zip\n\nARCHIVE_URL=\"https://github.com/facebook/facebook-ios-sdk/releases/download/v13.2.0/FacebookSDK-Static_XCFramework.zip\"\ncurl -Lk $ARCHIVE_URL -o $ARCHIVE_NAME\n\nunzip $ARCHIVE_NAME -d fbsdk\nmv fbsdk/XCFrameworks/FBSDKCoreKit.xcframework .\nmv fbsdk/XCFrameworks/FBSDKTVOSKit.xcframework .\n\nrm $ARCHIVE_NAME\nrm -r fbsdk\nfi\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ ! -d $SRCROOT/../Carthage/Build ]; then\nmkdir $SRCROOT/../Carthage/Build\nfi\n\ncd $SRCROOT/../Carthage/Build\n\nif [ ! -d \"FBSDKCoreKit.xcframework\" ] || [ ! -d \"FBSDKTVOSKit.xcframework\" ]; then\nARCHIVE_NAME=FBSDK.zip\n\nARCHIVE_URL=\"https://github.com/facebook/facebook-ios-sdk/releases/download/v15.1.0/FacebookSDK-Static_XCFramework.zip\"\ncurl -Lk $ARCHIVE_URL -o $ARCHIVE_NAME\n\nunzip $ARCHIVE_NAME -d fbsdk\nrm -rf FBSDKCoreKit.xcframework\nrm -rf FBSDKTVOSKit.xcframework\n\nmv fbsdk/XCFrameworks/FBSDKCoreKit.xcframework .\nmv fbsdk/XCFrameworks/FBSDKTVOSKit.xcframework .\n\nrm $ARCHIVE_NAME\nrm -r fbsdk\nfi\n";
 		};
 		4A1351B220281814000F5FD5 /* Fetch Latest Dependencies */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -699,33 +747,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ ! -d $SRCROOT/../Carthage/Build ]; then\nmkdir $SRCROOT/../Carthage/Build\nfi\n\ncd $SRCROOT/../Carthage/Build\n\nif [ ! -d \"FBSDKCoreKit.xcframework\" ] || [ ! -d \"FBSDKLoginKit.xcframework\" ] || [ ! -d \"FBSDKCoreKit_Basics.xcframework\" ] || [ ! -d \"FBAEMKit.xcframework\" ]; then\nARCHIVE_NAME=FBSDK.zip\n\nARCHIVE_URL=\"https://github.com/facebook/facebook-ios-sdk/releases/download/v15.1.0/FacebookSDK-Static_XCFramework.zip\"\ncurl -Lk $ARCHIVE_URL -o $ARCHIVE_NAME\n\nunzip $ARCHIVE_NAME -d fbsdk\nrm -rf FBSDKCoreKit.xcframework\nrm -rf FBSDKLoginKit.xcframework\nrm -rf FBSDKCoreKit_Basics.xcframework\nrm -rf FBAEMKit.xcframework\n\nmv fbsdk/XCFrameworks/FBSDKCoreKit.xcframework .\nmv fbsdk/XCFrameworks/FBSDKLoginKit.xcframework .\nmv fbsdk/XCFrameworks/FBSDKCoreKit_Basics.xcframework .\nmv fbsdk/XCFrameworks/FBAEMKit.xcframework .\n\nrm $ARCHIVE_NAME\nrm -r fbsdk\nfi\n";
-		};
-		4A13525320282699000F5FD5 /* Cleanup Vendored Static lib */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Cleanup Vendored Static lib";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "rm -rf $SRCROOT/Vendor/*.framework\n";
-		};
-		4A135254202826D8000F5FD5 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "rm -rf $SRCROOT/Vendor/*.framework\n";
 		};
 		4AAEAA5D200C020E00AA7479 /* Generate Localizable Strings */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -836,6 +857,21 @@
 			name = "Parse-iOS";
 			targetProxy = 7C77CFC829290F4500C4D90E /* PBXContainerItemProxy */;
 		};
+		7C77D01A2929110300C4D90E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Parse-tvOS";
+			targetProxy = 7C77D0192929110300C4D90E /* PBXContainerItemProxy */;
+		};
+		7C77D0212929117E00C4D90E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Parse-iOS-Dynamic";
+			targetProxy = 7C77D0202929117E00C4D90E /* PBXContainerItemProxy */;
+		};
+		7C77D0272929118E00C4D90E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Parse-tvOS-Dynamic";
+			targetProxy = 7C77D0262929118E00C4D90E /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -845,7 +881,7 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Vendor",
+					"$(SRCROOT)/../Carthage/Build",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SUPPORTS_MACCATALYST = NO;
@@ -859,7 +895,7 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Vendor",
+					"$(SRCROOT)/../Carthage/Build",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SUPPORTS_MACCATALYST = NO;
@@ -907,7 +943,7 @@
 				CLANG_MODULES_AUTOLINK = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Vendor",
+					"$(SRCROOT)/../Carthage/Build",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SUPPORTS_MACCATALYST = NO;
@@ -924,7 +960,7 @@
 				CLANG_MODULES_AUTOLINK = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Vendor",
+					"$(SRCROOT)/../Carthage/Build",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SUPPORTS_MACCATALYST = NO;
@@ -938,6 +974,10 @@
 			baseConfigurationReference = 4AAEAA93200C026300AA7479 /* ParseFacebookUtilsV4-tvOS-Dynamic.xcconfig */;
 			buildSettings = {
 				CLANG_MODULES_AUTOLINK = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Carthage/Build",
+				);
 				SWIFT_VERSION = 5.0;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -948,6 +988,10 @@
 			baseConfigurationReference = 4AAEAA93200C026300AA7479 /* ParseFacebookUtilsV4-tvOS-Dynamic.xcconfig */;
 			buildSettings = {
 				CLANG_MODULES_AUTOLINK = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../Carthage/Build",
+				);
 				SWIFT_VERSION = 5.0;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -959,7 +1003,7 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Vendor/tvOS",
+					"$(SRCROOT)/../Carthage/Build",
 				);
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -971,7 +1015,7 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Vendor/tvOS",
+					"$(SRCROOT)/../Carthage/Build",
 				);
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
