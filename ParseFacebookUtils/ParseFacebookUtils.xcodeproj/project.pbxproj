@@ -45,6 +45,86 @@
 		7C78240729290CA600E9364E /* FBSDKLoginKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C78240229290C9B00E9364E /* FBSDKLoginKit.xcframework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7C77CFB429290F4100C4D90E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C77CFA529290F4000C4D90E /* Parse.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 81C3821C19CCA89E0066284A;
+			remoteInfo = "Parse-iOS";
+		};
+		7C77CFB629290F4100C4D90E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C77CFA529290F4000C4D90E /* Parse.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 81C5845D1C3B0A98000063C6;
+			remoteInfo = "Parse-iOS-Dynamic";
+		};
+		7C77CFB829290F4100C4D90E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C77CFA529290F4000C4D90E /* Parse.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 816F449B1A8E8933009CDB32;
+			remoteInfo = "ParseUnitTests-iOS";
+		};
+		7C77CFBA29290F4100C4D90E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C77CFA529290F4000C4D90E /* Parse.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 97010FAC1630B18F00AB761E;
+			remoteInfo = "Parse-macOS";
+		};
+		7C77CFBC29290F4100C4D90E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C77CFA529290F4000C4D90E /* Parse.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 81C09F861AF97A490043B49C;
+			remoteInfo = "ParseUnitTests-macOS";
+		};
+		7C77CFBE29290F4100C4D90E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C77CFA529290F4000C4D90E /* Parse.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 815F24151BD04D150054659F;
+			remoteInfo = "Parse-tvOS";
+		};
+		7C77CFC029290F4100C4D90E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C77CFA529290F4000C4D90E /* Parse.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 81C585BF1C3B0AA1000063C6;
+			remoteInfo = "Parse-tvOS-Dynamic";
+		};
+		7C77CFC229290F4100C4D90E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C77CFA529290F4000C4D90E /* Parse.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 810156691BB3832700D7C7BD;
+			remoteInfo = "Parse-watchOS";
+		};
+		7C77CFC429290F4100C4D90E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C77CFA529290F4000C4D90E /* Parse.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 81C5870F1C3B0AA9000063C6;
+			remoteInfo = "Parse-watchOS-Dynamic";
+		};
+		7C77CFC629290F4100C4D90E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C77CFA529290F4000C4D90E /* Parse.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4AE33A0B1F5451AD0088DCA0;
+			remoteInfo = "ParseUnitTests-iOS-host";
+		};
+		7C77CFC829290F4500C4D90E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C77CFA529290F4000C4D90E /* Parse.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 81C3821B19CCA89E0066284A;
+			remoteInfo = "Parse-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		BCCC20E1271F1BAB003C9D03 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -86,6 +166,7 @@
 		7C5F7D26292101370035B219 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		7C5F7DF3292105800035B219 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.1.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
 		7C5F7DF5292105880035B219 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.1.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		7C77CFA529290F4000C4D90E /* Parse.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Parse.xcodeproj; path = ../Parse/Parse.xcodeproj; sourceTree = "<group>"; };
 		7C78240029290C9A00E9364E /* FBSDKCoreKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBSDKCoreKit.xcframework; path = ../Carthage/Build/FBSDKCoreKit.xcframework; sourceTree = "<group>"; };
 		7C78240129290C9A00E9364E /* FBSDKCoreKit_Basics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBSDKCoreKit_Basics.xcframework; path = ../Carthage/Build/FBSDKCoreKit_Basics.xcframework; sourceTree = "<group>"; };
 		7C78240229290C9B00E9364E /* FBSDKLoginKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBSDKLoginKit.xcframework; path = ../Carthage/Build/FBSDKLoginKit.xcframework; sourceTree = "<group>"; };
@@ -178,6 +259,7 @@
 				7C78240129290C9A00E9364E /* FBSDKCoreKit_Basics.xcframework */,
 				7C78240029290C9A00E9364E /* FBSDKCoreKit.xcframework */,
 				7C78240229290C9B00E9364E /* FBSDKLoginKit.xcframework */,
+				7C77CFA529290F4000C4D90E /* Parse.xcodeproj */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -212,6 +294,23 @@
 				7C5F7D26292101370035B219 /* File.swift */,
 			);
 			path = exclude;
+			sourceTree = "<group>";
+		};
+		7C77CFA629290F4000C4D90E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C77CFB529290F4100C4D90E /* Parse.framework */,
+				7C77CFB729290F4100C4D90E /* Parse.framework */,
+				7C77CFB929290F4100C4D90E /* ParseUnitTests-iOS.xctest */,
+				7C77CFBB29290F4100C4D90E /* Parse.framework */,
+				7C77CFBD29290F4100C4D90E /* ParseUnitTests-macOS.xctest */,
+				7C77CFBF29290F4100C4D90E /* Parse.framework */,
+				7C77CFC129290F4100C4D90E /* Parse.framework */,
+				7C77CFC329290F4100C4D90E /* Parse.framework */,
+				7C77CFC529290F4100C4D90E /* Parse.framework */,
+				7C77CFC729290F4100C4D90E /* ParseUnitTests-iOS-host.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		8121EA9E1D39862400AC0B02 /* Shared */ = {
@@ -409,6 +508,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				7C77CFC929290F4500C4D90E /* PBXTargetDependency */,
 			);
 			name = "ParseFacebookUtilsV4-iOS";
 			packageProductDependencies = (
@@ -451,6 +551,12 @@
 			);
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7C77CFA629290F4000C4D90E /* Products */;
+					ProjectRef = 7C77CFA529290F4000C4D90E /* Parse.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D2AAC07D0554694100DB518D /* ParseFacebookUtilsV4-iOS */,
@@ -460,6 +566,79 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7C77CFB529290F4100C4D90E /* Parse.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Parse.framework;
+			remoteRef = 7C77CFB429290F4100C4D90E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7C77CFB729290F4100C4D90E /* Parse.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Parse.framework;
+			remoteRef = 7C77CFB629290F4100C4D90E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7C77CFB929290F4100C4D90E /* ParseUnitTests-iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ParseUnitTests-iOS.xctest";
+			remoteRef = 7C77CFB829290F4100C4D90E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7C77CFBB29290F4100C4D90E /* Parse.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Parse.framework;
+			remoteRef = 7C77CFBA29290F4100C4D90E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7C77CFBD29290F4100C4D90E /* ParseUnitTests-macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ParseUnitTests-macOS.xctest";
+			remoteRef = 7C77CFBC29290F4100C4D90E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7C77CFBF29290F4100C4D90E /* Parse.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Parse.framework;
+			remoteRef = 7C77CFBE29290F4100C4D90E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7C77CFC129290F4100C4D90E /* Parse.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Parse.framework;
+			remoteRef = 7C77CFC029290F4100C4D90E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7C77CFC329290F4100C4D90E /* Parse.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Parse.framework;
+			remoteRef = 7C77CFC229290F4100C4D90E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7C77CFC529290F4100C4D90E /* Parse.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Parse.framework;
+			remoteRef = 7C77CFC429290F4100C4D90E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7C77CFC729290F4100C4D90E /* ParseUnitTests-iOS-host.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "ParseUnitTests-iOS-host.app";
+			remoteRef = 7C77CFC629290F4100C4D90E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4AAEAA70200C020E00AA7479 /* Resources */ = {
@@ -650,6 +829,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C77CFC929290F4500C4D90E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Parse-iOS";
+			targetProxy = 7C77CFC829290F4500C4D90E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1DEB921F08733DC00010E9CD /* Debug */ = {
