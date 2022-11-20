@@ -37,7 +37,13 @@
         if (bundleURL) {
             bundle = [NSBundle bundleWithURL:bundleURL];
         } else {
-            bundle = [NSBundle mainBundle];
+            bundleURL = [classBundle URLForResource:@"ParseObjC_ParseUI" withExtension:@"bundle"];
+            if (bundleURL) {
+                bundle = [NSBundle bundleWithURL:bundleURL];
+            }
+            else {
+                bundle = [NSBundle mainBundle];
+            }
         }
     });
     return bundle;

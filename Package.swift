@@ -25,6 +25,7 @@ let package = Package(
             name: "ParseCore",
             dependencies: [.product(name: "Bolts", package: "Bolts-ObjC")],
             path: "Parse/Parse",
+            exclude: ["Resources/Parse-tvOS.Info.plist", "Resources/Parse-iOS.Info.plist", "Resources/Parse-OSX.Info.plist", "Resources/Parse-watchOS.Info.plist"],
             resources: [.process("Resources")],
             publicHeadersPath: "Source",
             cSettings: [.headerSearchPath("Internal/**")]),
@@ -36,7 +37,7 @@ let package = Package(
                 .product(name: "FacebookCore", package: "facebook-ios-sdk", condition: .when(platforms: [.iOS, .tvOS])),
                 .product(name: "FacebookLogin", package: "facebook-ios-sdk", condition: .when(platforms: [.iOS, .tvOS]))],
             path: "ParseFacebookUtils/ParseFacebookUtils",
-            exclude: ["exclude"],
+            exclude: ["exclude", "Resources/Info-tvOS.plist", "Resources/Info-iOS.plist"],
             resources: [.process("Resources")],
             publicHeadersPath: "Source"),
         .target(name: "ParseFacebookUtilsiOS",
@@ -44,7 +45,7 @@ let package = Package(
                 "ParseFacebookUtils"
                ],
                 path: "ParseFacebookUtilsiOS/ParseFacebookUtilsiOS",
-                exclude: ["exclude"],
+                exclude: ["exclude", "Resources/Info-iOS.plist"],
                 resources: [.process("Resources")],
                 publicHeadersPath: "Source",
                 cSettings: [.headerSearchPath("Internal/**")]),
@@ -54,7 +55,7 @@ let package = Package(
                 .product(name: "FacebookTV", package: "facebook-ios-sdk", condition: .when(platforms: [.tvOS]))
                ],
                 path: "ParseFacebookUtilsTvOS/ParseFacebookUtilsTvOS",
-                exclude: ["exclude"],
+                exclude: ["exclude", "Resources/Info-tvOS.plist"],
                 resources: [.process("Resources")],
                 publicHeadersPath: "Source",
                 cSettings: [.headerSearchPath("Internal/**")]),
@@ -63,6 +64,7 @@ let package = Package(
                 "ParseCore"
                ],
                 path: "ParseTwitterUtils/ParseTwitterUtils",
+                exclude: ["Resources/Info-iOS.plist"],
                 resources: [.process("Resources")],
                 publicHeadersPath: "Source",
                 cSettings: [.headerSearchPath("Internal/**")]),
@@ -72,6 +74,7 @@ let package = Package(
                 "ParseTwitterUtils"
                ],
                 path: "ParseUI/ParseUI",
+                exclude: ["Resources/Info-iOS.plist"],
                 resources: [.process("Resources")],
                 publicHeadersPath: "Source",
                 cSettings: [.headerSearchPath("Internal/**")]),
