@@ -182,17 +182,12 @@ Pod::Spec.new do |s|
     s.platform              = :ios
     s.requires_arc          = true
     s.ios.deployment_target = '9.0'
-    s.source_files        = 'ParseUI/**/*.{h,m}'
-    s.exclude_files = 'ParseUI/ParseUIDemo/**/*', 'ParseUI/Other/ParseUI.h', 'ParseUI/SignInWithAppleTests/'
-    s.public_header_files = 'ParseUI/Classes/LogInViewController/*.h',
-                            'ParseUI/Classes/SignUpViewController/*.h',
-                            'ParseUI/Classes/QueryTableViewController/*.h',
-                            'ParseUI/Classes/QueryCollectionViewController/*.h',
-                            'ParseUI/Classes/ProductTableViewController/*.h',
-                            'ParseUI/Classes/Views/*.h',
-                            'ParseUI/Classes/Cells/*.h',
-                            'ParseUI/Other/*.h'
-    s.resource_bundles    = { 'ParseUI' => ['ParseUI/Resources/Localization/*.lproj'] }
+    s.source_files        = 'ParseUI/ParseUI/Internal/**/*.{h,m}',
+                            'ParseUI/ParseUI/Source/*.{h,m}'
+    s.exclude_files = 'ParseUI/ParseUIDemo/**/*', 'ParseUI/SignInWithAppleTests/'
+    s.public_header_files = 'ParseUI/ParseUI/Source/*.h'
+    s.private_header_files = 'ParseUI/ParseUI/Internal/**/*.h'
+    s.resource_bundles    = { 'ParseUI' => ['ParseUI/ParseUI/Resources/Localization/*.lproj'] }
     s.frameworks          = 'Foundation',
                             'UIKit',
                             'CoreGraphics',
@@ -203,7 +198,7 @@ Pod::Spec.new do |s|
   # prepare command for parseUI
   s.prepare_command     = <<-CMD
   ruby ParseUI/Scripts/convert_images.rb \
-        ParseUI/Resources/Images/ \
-        ParseUI/Generated/PFResources
+        ParseUI/ParseUI/Resources/Images/ \
+        ParseUI/Source/PFResources
   CMD
 end

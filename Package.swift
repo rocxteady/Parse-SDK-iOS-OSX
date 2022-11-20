@@ -13,7 +13,8 @@ let package = Package(
         .library(name: "ParseObjC", targets: ["ParseCore"]),
         .library(name: "ParseFacebookUtilsiOS", targets: ["ParseFacebookUtilsiOS"]),
         .library(name: "ParseFacebookUtilsTvOS", targets: ["ParseFacebookUtilsTvOS"]),
-        .library(name: "ParseTwitterUtils", targets: ["ParseTwitterUtils"])
+        .library(name: "ParseTwitterUtils", targets: ["ParseTwitterUtils"]),
+        .library(name: "ParseUI", targets: ["ParseUI"])
     ],
     dependencies: [
         .package(url: "https://github.com/rocxteady/Bolts-ObjC", revision: "0419586ce3df0a004fbf94533198132de9c9aa0a"),
@@ -62,7 +63,15 @@ let package = Package(
                 "ParseCore"
                ],
                 path: "ParseTwitterUtils/ParseTwitterUtils",
-//                exclude: ["exclude"],
+                resources: [.process("Resources")],
+                publicHeadersPath: "Source",
+                cSettings: [.headerSearchPath("Internal/**")]),
+        .target(name: "ParseUI",
+               dependencies: [
+                "ParseFacebookUtilsiOS",
+                "ParseTwitterUtils"
+               ],
+                path: "ParseUI/ParseUI",
                 resources: [.process("Resources")],
                 publicHeadersPath: "Source",
                 cSettings: [.headerSearchPath("Internal/**")]),
