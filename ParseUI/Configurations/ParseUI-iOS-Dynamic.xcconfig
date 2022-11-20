@@ -14,5 +14,3 @@ PRODUCT_NAME = ParseUI
 PRODUCT_BUNDLE_IDENTIFIER = com.parse.parseui
 
 INFOPLIST_FILE = $(SRCROOT)/ParseUI/Resources/Info-iOS.plist
-
-FRAMEWORK_SEARCH_PATHS = $(inherited) $(SRCROOT)/../Carthage/Build/iOS

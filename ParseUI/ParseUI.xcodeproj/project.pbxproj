@@ -387,20 +387,6 @@
 			remoteGlobalIDString = 8DE97CA022B43EE60098C63F;
 			remoteInfo = "OCMock watchOS";
 		};
-		7C77D21B292A55E900C4D90E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7C77D1A8292A51AA00C4D90E /* ParseTwitterUtils.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D;
-			remoteInfo = "ParseTwitterUtils-iOS";
-		};
-		7C77D21D292A55EF00C4D90E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7C77D1D5292A522800C4D90E /* ParseFacebookUtilsiOS.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D;
-			remoteInfo = ParseFacebookUtilsiOS;
-		};
 		BCCBE8CF23BFB89D0044A79C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
@@ -1304,8 +1290,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				7C77D21E292A55EF00C4D90E /* PBXTargetDependency */,
-				7C77D21C292A55E900C4D90E /* PBXTargetDependency */,
 				4A0ECCAD200DA7D100BA84A3 /* PBXTargetDependency */,
 			);
 			name = ParseUIDemo;
@@ -1796,16 +1780,6 @@
 			name = "Parse-iOS-Dynamic";
 			targetProxy = 7C77D14E292A50F600C4D90E /* PBXContainerItemProxy */;
 		};
-		7C77D21C292A55E900C4D90E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "ParseTwitterUtils-iOS";
-			targetProxy = 7C77D21B292A55E900C4D90E /* PBXContainerItemProxy */;
-		};
-		7C77D21E292A55EF00C4D90E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ParseFacebookUtilsiOS;
-			targetProxy = 7C77D21D292A55EF00C4D90E /* PBXContainerItemProxy */;
-		};
 		BCCBE8D023BFB89D0044A79C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4A9A9496200D0329005D8F4B /* ParseUI */;
@@ -2081,10 +2055,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Vendor",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -2150,10 +2121,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Vendor",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -2192,10 +2160,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Vendor",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2239,10 +2204,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Vendor",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
