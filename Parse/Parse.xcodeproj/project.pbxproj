@@ -36,6 +36,20 @@
 		7070954F1F171082000C50EA /* PolygonUnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 702F3A171F11807B0043DD72 /* PolygonUnitTests.m */; };
 		709EC32E1F143B8F00C55549 /* PolygonUnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 702F3A171F11807B0043DD72 /* PolygonUnitTests.m */; };
 		709EC3361F1491EA00C55549 /* PFPolygonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 709EC3351F1491EA00C55549 /* PFPolygonPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7C605D1A292A953700E4B6D2 /* PFCoreLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C605D0F292A953700E4B6D2 /* PFCoreLocalization.m */; };
+		7C605D1B292A953700E4B6D2 /* PFCoreLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C605D0F292A953700E4B6D2 /* PFCoreLocalization.m */; };
+		7C605D1C292A953700E4B6D2 /* PFCoreLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C605D0F292A953700E4B6D2 /* PFCoreLocalization.m */; };
+		7C605D1D292A953700E4B6D2 /* PFCoreLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C605D0F292A953700E4B6D2 /* PFCoreLocalization.m */; };
+		7C605D1E292A953700E4B6D2 /* PFCoreLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C605D0F292A953700E4B6D2 /* PFCoreLocalization.m */; };
+		7C605D1F292A953700E4B6D2 /* PFCoreLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C605D0F292A953700E4B6D2 /* PFCoreLocalization.m */; };
+		7C605D20292A953700E4B6D2 /* PFCoreLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C605D0F292A953700E4B6D2 /* PFCoreLocalization.m */; };
+		7C605D21292A953700E4B6D2 /* PFCoreLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C605D19292A953700E4B6D2 /* PFCoreLocalization.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7C605D22292A953700E4B6D2 /* PFCoreLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C605D19292A953700E4B6D2 /* PFCoreLocalization.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7C605D23292A953700E4B6D2 /* PFCoreLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C605D19292A953700E4B6D2 /* PFCoreLocalization.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7C605D24292A953700E4B6D2 /* PFCoreLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C605D19292A953700E4B6D2 /* PFCoreLocalization.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7C605D25292A953700E4B6D2 /* PFCoreLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C605D19292A953700E4B6D2 /* PFCoreLocalization.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7C605D26292A953700E4B6D2 /* PFCoreLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C605D19292A953700E4B6D2 /* PFCoreLocalization.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7C605D27292A953700E4B6D2 /* PFCoreLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C605D19292A953700E4B6D2 /* PFCoreLocalization.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7C6174CC291F177E00522D71 /* PFFileUploadResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C61748B291F176500522D71 /* PFFileUploadResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C6174CD291F177E00522D71 /* PFPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C6174B8291F176500522D71 /* PFPolygon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C6174CE291F177E00522D71 /* PFRelation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C617496291F176500522D71 /* PFRelation.m */; };
@@ -3065,6 +3079,8 @@
 		709EC3351F1491EA00C55549 /* PFPolygonPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFPolygonPrivate.h; sourceTree = "<group>"; };
 		7C1FDDCA14E1B1BD00A77007 /* PFCommandCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCommandCache.h; sourceTree = "<group>"; };
 		7C1FDDCB14E1B1BD00A77007 /* PFCommandCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCommandCache.m; sourceTree = "<group>"; };
+		7C605D0F292A953700E4B6D2 /* PFCoreLocalization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCoreLocalization.m; sourceTree = "<group>"; };
+		7C605D19292A953700E4B6D2 /* PFCoreLocalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCoreLocalization.h; sourceTree = "<group>"; };
 		7C617489291F176500522D71 /* PFFileObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFFileObject.m; sourceTree = "<group>"; };
 		7C61748A291F176500522D71 /* PFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
 		7C61748B291F176500522D71 /* PFFileUploadResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFFileUploadResult.h; sourceTree = "<group>"; };
@@ -3751,6 +3767,8 @@
 				F556643F1C10F37E006DEC12 /* ParseClientConfiguration_Private.h */,
 				81BB6E1F1B0E7A1A00465C38 /* PFBase64Encoder.h */,
 				81BB6E201B0E7A1A00465C38 /* PFBase64Encoder.m */,
+				7C605D19292A953700E4B6D2 /* PFCoreLocalization.h */,
+				7C605D0F292A953700E4B6D2 /* PFCoreLocalization.m */,
 				815618FE1A1F79AC0076504A /* PFDateFormatter.h */,
 				815618FF1A1F79AC0076504A /* PFDateFormatter.m */,
 				8159609F1ABCA3B30069EBCC /* PFFileManager.h */,
@@ -5387,6 +5405,7 @@
 				7C617631291F178100522D71 /* PFQuery+Deprecated.h in Headers */,
 				810156111BB3832700D7C7BD /* PFObjectSubclassInfo.h in Headers */,
 				7C617620291F178100522D71 /* PFQuery+Synchronous.h in Headers */,
+				7C605D26292A953700E4B6D2 /* PFCoreLocalization.h in Headers */,
 				810156121BB3832700D7C7BD /* PFAnalyticsController.h in Headers */,
 				810156131BB3832700D7C7BD /* PFErrorUtilities.h in Headers */,
 				7C617625291F178100522D71 /* PFCloud+Deprecated.h in Headers */,
@@ -5673,6 +5692,7 @@
 				815F23FE1BD04D150054659F /* PFAnalyticsUtilities.h in Headers */,
 				815F24001BD04D150054659F /* PFUserState_Private.h in Headers */,
 				815F24011BD04D150054659F /* PFAnonymousAuthenticationProvider.h in Headers */,
+				7C605D24292A953700E4B6D2 /* PFCoreLocalization.h in Headers */,
 				815F24021BD04D150054659F /* PFQueryState.h in Headers */,
 				7C6175D0291F178000522D71 /* PFUser+Synchronous.h in Headers */,
 				815F24031BD04D150054659F /* PFObjectFileCoder.h in Headers */,
@@ -5834,6 +5854,7 @@
 				7C6174DB291F177E00522D71 /* PFUserAuthenticationDelegate.h in Headers */,
 				7C6174F3291F177E00522D71 /* PFACL.h in Headers */,
 				815EE91D19F987910076FE5D /* PFRESTCloudCommand.h in Headers */,
+				7C605D21292A953700E4B6D2 /* PFCoreLocalization.h in Headers */,
 				81C7F48B1AF4110B007B5418 /* PFQueryUtilities.h in Headers */,
 				8166FC971B50381B003841A2 /* PFQueryPrivate.h in Headers */,
 				7C6174F6291F177E00522D71 /* PFConstants.h in Headers */,
@@ -6061,6 +6082,7 @@
 				7C61751E291F177F00522D71 /* PFUserAuthenticationDelegate.h in Headers */,
 				7C617536291F177F00522D71 /* PFACL.h in Headers */,
 				81C5840E1C3B0A98000063C6 /* PFQueryUtilities.h in Headers */,
+				7C605D22292A953700E4B6D2 /* PFCoreLocalization.h in Headers */,
 				81C5840F1C3B0A98000063C6 /* PFQueryPrivate.h in Headers */,
 				81C584101C3B0A98000063C6 /* PFPushState.h in Headers */,
 				7C617539291F177F00522D71 /* PFConstants.h in Headers */,
@@ -6353,6 +6375,7 @@
 				81C585A71C3B0AA1000063C6 /* PFAnalyticsUtilities.h in Headers */,
 				81C585A91C3B0AA1000063C6 /* PFUserState_Private.h in Headers */,
 				81C585AA1C3B0AA1000063C6 /* PFAnonymousAuthenticationProvider.h in Headers */,
+				7C605D25292A953700E4B6D2 /* PFCoreLocalization.h in Headers */,
 				81C585AB1C3B0AA1000063C6 /* PFQueryState.h in Headers */,
 				7C617613291F178100522D71 /* PFUser+Synchronous.h in Headers */,
 				81C585AC1C3B0AA1000063C6 /* PFObjectFileCoder.h in Headers */,
@@ -6533,6 +6556,7 @@
 				7C617675291F178200522D71 /* PFConfig+Synchronous.h in Headers */,
 				81C586DD1C3B0AA9000063C6 /* PFLogging.h in Headers */,
 				81C586DE1C3B0AA9000063C6 /* PFPersistenceController.h in Headers */,
+				7C605D27292A953700E4B6D2 /* PFCoreLocalization.h in Headers */,
 				81C586DF1C3B0AA9000063C6 /* PFURLSessionCommandRunner_Private.h in Headers */,
 				81C586E01C3B0AA9000063C6 /* PFConfig_Private.h in Headers */,
 				7C617672291F178200522D71 /* PFRole.h in Headers */,
@@ -6716,6 +6740,7 @@
 				811214741B3E1CF10052741B /* PFObjectBatchController.h in Headers */,
 				818ADC771BE1A8BA00C8006C /* PFFilePersistenceGroup.h in Headers */,
 				8148814A1B795C63008763BF /* PFKeyValueCache_Private.h in Headers */,
+				7C605D23292A953700E4B6D2 /* PFCoreLocalization.h in Headers */,
 				81D843CA1B012FBA007CEBCB /* PFCloudCodeController.h in Headers */,
 				81068EBC1ADE462500A34D13 /* Parse_Private.h in Headers */,
 				812B02971B5DE3EE003846EE /* PFURLSession.h in Headers */,
@@ -7520,6 +7545,7 @@
 				8101557C1BB3832700D7C7BD /* PFObjectUtilities.m in Sources */,
 				8101557D1BB3832700D7C7BD /* PFURLSessionJSONDataTaskDelegate.m in Sources */,
 				8101557E1BB3832700D7C7BD /* PFObjectEstimatedData.m in Sources */,
+				7C605D1F292A953700E4B6D2 /* PFCoreLocalization.m in Sources */,
 				810155801BB3832700D7C7BD /* PFMultiProcessFileLockController.m in Sources */,
 				810155811BB3832700D7C7BD /* PFURLConstructor.m in Sources */,
 				810155841BB3832700D7C7BD /* PFBaseState.m in Sources */,
@@ -7580,6 +7606,7 @@
 				815F22C81BD04D150054659F /* PFObjectController.m in Sources */,
 				815F22C91BD04D150054659F /* PFCategoryLoader.m in Sources */,
 				815F22CA1BD04D150054659F /* PFUserAuthenticationController.m in Sources */,
+				7C605D1D292A953700E4B6D2 /* PFCoreLocalization.m in Sources */,
 				815F22CB1BD04D150054659F /* PFRelationState.m in Sources */,
 				815F22CC1BD04D150054659F /* ParseManager.m in Sources */,
 				815F22CE1BD04D150054659F /* PFAnalyticsController.m in Sources */,
@@ -7982,6 +8009,7 @@
 				8127148A1AE6F1270076AE8D /* ParseManager.m in Sources */,
 				81CB7F901B1795C000DC601D /* PFPushState.m in Sources */,
 				8196D55D1B0AB64B000465A1 /* PFAnalyticsController.m in Sources */,
+				7C605D1A292A953700E4B6D2 /* PFCoreLocalization.m in Sources */,
 				81BCB4C61B744626006659CB /* PFURLSessionDataTaskDelegate.m in Sources */,
 				81493AA61A0D6DE0008D5504 /* PFRESTObjectBatchCommand.m in Sources */,
 				81A2458F1B1E99C6006A6953 /* PFFieldOperation.m in Sources */,
@@ -8144,6 +8172,7 @@
 				81C582FF1C3B0A98000063C6 /* ParseManager.m in Sources */,
 				81C583001C3B0A98000063C6 /* PFPushState.m in Sources */,
 				81C583011C3B0A98000063C6 /* PFAnalyticsController.m in Sources */,
+				7C605D1B292A953700E4B6D2 /* PFCoreLocalization.m in Sources */,
 				81C583021C3B0A98000063C6 /* PFURLSessionDataTaskDelegate.m in Sources */,
 				81C583041C3B0A98000063C6 /* PFRESTObjectBatchCommand.m in Sources */,
 				81C583051C3B0A98000063C6 /* PFFieldOperation.m in Sources */,
@@ -8306,6 +8335,7 @@
 				81C5847A1C3B0AA1000063C6 /* PFObjectController.m in Sources */,
 				81C5847B1C3B0AA1000063C6 /* PFCategoryLoader.m in Sources */,
 				81C5847C1C3B0AA1000063C6 /* PFUserAuthenticationController.m in Sources */,
+				7C605D1E292A953700E4B6D2 /* PFCoreLocalization.m in Sources */,
 				81C5847D1C3B0AA1000063C6 /* PFRelationState.m in Sources */,
 				81C5847E1C3B0AA1000063C6 /* ParseManager.m in Sources */,
 				81C5847F1C3B0AA1000063C6 /* PFAnalyticsController.m in Sources */,
@@ -8520,6 +8550,7 @@
 				81C5860D1C3B0AA9000063C6 /* PFKeychainStore.m in Sources */,
 				81C5860E1C3B0AA9000063C6 /* PFQueryState.m in Sources */,
 				81C5860F1C3B0AA9000063C6 /* PFSessionController.m in Sources */,
+				7C605D20292A953700E4B6D2 /* PFCoreLocalization.m in Sources */,
 				81C586101C3B0AA9000063C6 /* PFMutableFileState.m in Sources */,
 				81C586111C3B0AA9000063C6 /* PFCurrentConfigController.m in Sources */,
 				81C586131C3B0AA9000063C6 /* PFEventuallyQueue.m in Sources */,
@@ -8688,6 +8719,7 @@
 				818D6F231B3DCB5A00F94C82 /* PFObjectEstimatedData.m in Sources */,
 				81C7F49C1AF42187007B5418 /* PFFileState.m in Sources */,
 				7C61755A291F177F00522D71 /* PFProduct.m in Sources */,
+				7C605D1C292A953700E4B6D2 /* PFCoreLocalization.m in Sources */,
 				815EE94919FAD12F0076FE5D /* PFRESTQueryCommand.m in Sources */,
 				81CD665D1B4DA5BA0042FC0B /* PFInstallationController.m in Sources */,
 				81CD66571B4DA5A70042FC0B /* PFCurrentInstallationController.m in Sources */,
