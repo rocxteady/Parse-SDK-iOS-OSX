@@ -35,7 +35,7 @@
 ///--------------------------------------
 
 - (void)tearDown {
-    [PFFacebookUtils _setAuthenticationProvider:nil];
+    [PFFacebookUtilsDevice _setAuthenticationProvider:nil];
 
     [super tearDown];
 }

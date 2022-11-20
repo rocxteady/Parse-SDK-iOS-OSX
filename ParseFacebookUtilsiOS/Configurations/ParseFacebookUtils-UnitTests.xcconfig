@@ -15,7 +15,5 @@ PRODUCT_BUNDLE_IDENTIFIER = com.parse.facebookutilsios.unit
 
 IPHONEOS_DEPLOYMENT_TARGET = 9.0
 
-FRAMEWORK_SEARCH_PATHS = $(inherited) $(BUILT_PRODUCTS_DIR) $(SRCROOT)/Vendor
-
 INFOPLIST_FILE = $(SRCROOT)/Tests/Resources/Info.plist
 TEST_HOST = $(BUILT_PRODUCTS_DIR)/ParseFacebookTestApplication.app/ParseFacebookTestApplication

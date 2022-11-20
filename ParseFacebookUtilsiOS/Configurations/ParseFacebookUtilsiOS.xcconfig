@@ -14,5 +14,3 @@ PRODUCT_NAME = ParseFacebookUtilsiOS
 PRODUCT_BUNDLE_IDENTIFIER = com.parse.facebookutilsios
 
 INFOPLIST_FILE = $(SRCROOT)/ParseFacebookUtilsiOS/Resources/Info-iOS.plist
-
-FRAMEWORK_SEARCH_PATHS = $(inherited) $(SRCROOT)/Vendor

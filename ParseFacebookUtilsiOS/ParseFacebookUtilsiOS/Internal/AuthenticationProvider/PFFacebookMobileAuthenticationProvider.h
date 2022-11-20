@@ -20,7 +20,7 @@
 #endif
 
 #if __has_include(<ParseFacebookUtilsV4/PFFacebookAuthenticationProvider.h>)
-#import <ParseFacebookUtilsV4/PFFacebookUtils.h>
+#import <ParseFacebookUtilsV4/PFFacebookAuthenticationProvider.h>
 #else
 #import "PFFacebookAuthenticationProvider.h"
 #endif
