@@ -7,6 +7,9 @@
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 
+#import "PFConstants.h"
+
+#if TARGET_OS_IOS || PF_TARGET_OS_OSX || TARGET_OS_TV
 #import "PFPush.h"
 #import "PFPushPrivate.h"
 
@@ -479,3 +482,5 @@ static Class _pushInternalUtilClass = nil;
 }
 
 @end
+
+#endif

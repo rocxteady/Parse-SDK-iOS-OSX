@@ -7,6 +7,10 @@
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 
+#import "PFConstants.h"
+
+#if TARGET_OS_IOS || PF_TARGET_OS_OSX || TARGET_OS_TV
+
 #import "PFInstallation.h"
 #import "PFInstallationPrivate.h"
 
@@ -374,3 +378,5 @@ static NSSet *protectedKeys;
 }
 
 @end
+
+#endif
