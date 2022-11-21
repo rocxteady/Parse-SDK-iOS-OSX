@@ -8,5 +8,4 @@
  */
 
 #import "PFFacebookUtils.h"
-#import "PFFacebookPrivateUtilities.h"
 #import "PFFacebookAuthenticationProvider.h"

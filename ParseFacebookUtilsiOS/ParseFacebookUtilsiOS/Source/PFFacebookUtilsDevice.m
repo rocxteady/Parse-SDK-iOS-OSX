@@ -20,12 +20,6 @@
 #import "Parse.h"
 #endif
 
-#if __has_include(<ParseFacebookUtilsV4/PFFacebookPrivateUtilities.h>)
-#import <ParseFacebookUtilsV4/PFFacebookPrivateUtilities.h>
-#else
-#import "PFFacebookPrivateUtilities.h"
-#endif
-
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 #import "PFFacebookMobileAuthenticationProvider.h"

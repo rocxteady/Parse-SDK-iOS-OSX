@@ -437,8 +437,8 @@
 		7CACE620291EA75A003359B5 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				7CACE621291EA75A003359B5 /* PFFacebookUtilsDevice.h */,
 				7CACE622291EA75A003359B5 /* ParseFacebookUtilsiOS.h */,
+				7CACE621291EA75A003359B5 /* PFFacebookUtilsDevice.h */,
 				7CACE623291EA75A003359B5 /* PFFacebookUtilsDevice.m */,
 			);
 			path = Source;

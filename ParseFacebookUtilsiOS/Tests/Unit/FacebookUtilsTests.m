@@ -14,10 +14,10 @@
 #import "PFFacebookTestCase.h"
 #import "PFFacebookUtils_Private.h"
 
-#if __has_include(<ParseFacebookUtilsV4/PFFacebookPrivateUtilities.h>)
-#import <ParseFacebookUtilsV4/PFFacebookPrivateUtilities.h>
+#if __has_include(<ParseFacebookUtilsV4/PFFacebookUtils.h>)
+#import <ParseFacebookUtilsV4/PFFacebookUtils.h>
 #else
-#import "PFFacebookPrivateUtilities.h"
+#import "PFFacebookUtils.h"
 #endif
 
 ///--------------------------------------
@@ -136,7 +136,7 @@
 }
 
 - (void)testLoginWithAccessToken {
-    id mockedPrivateUtilities = PFStrictClassMock([PFFacebookPrivateUtilities class]);
+    id mockedPrivateUtilities = PFStrictClassMock([PFFacebookUtils class]);
     id mockedAccessToken = PFStrictClassMock([FBSDKAccessToken class]);
     id mockedAuthProvider = PFStrictClassMock([PFFacebookMobileAuthenticationProvider class]);
     [PFFacebookUtilsDevice _setAuthenticationProvider:mockedAuthProvider];
@@ -213,7 +213,7 @@
 }
 
 - (void)testLinkWithAccessToken {
-    id mockedPrivateUtilities = PFStrictClassMock([PFFacebookPrivateUtilities class]);
+    id mockedPrivateUtilities = PFStrictClassMock([PFFacebookUtils class]);
     id mockedAccessToken = PFStrictClassMock([FBSDKAccessToken class]);
     id mockedUser = PFStrictClassMock([PFUser class]);
     id mockedAuthProvider = PFStrictClassMock([PFFacebookMobileAuthenticationProvider class]);

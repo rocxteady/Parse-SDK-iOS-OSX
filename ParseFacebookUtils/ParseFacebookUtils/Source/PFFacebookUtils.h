@@ -37,6 +37,20 @@ static PFFacebookAuthenticationProvider *authenticationProvider_;
  */
 @interface PFFacebookUtils : NSObject
 
++ (UIViewController *)applicationTopViewController;
+
+///--------------------------------------
+/// @name User Authentication Data
+///--------------------------------------
+
++ (NSDictionary *)userAuthenticationDataWithFacebookUserId:(NSString *)userId
+                                               accessToken:(NSString *)accessToken
+                                            expirationDate:(NSDate *)expirationDate;
++ (nullable NSDictionary *)userAuthenticationDataFromAccessToken:(FBSDKAccessToken *)token;
+
++ (nullable FBSDKAccessToken *)facebookAccessTokenFromUserAuthenticationData:(nullable NSDictionary<NSString *, NSString *> *)authData;
+
+
 ///--------------------------------------
 #pragma mark - Authentication Provider
 ///--------------------------------------
@@ -254,6 +268,26 @@ static PFFacebookAuthenticationProvider *authenticationProvider_;
  @return `YES` if the user has their account linked to Facebook, otherwise `NO`.
  */
 + (BOOL)isLinkedWithUser:(PFUser *)user;
+
+@end
+
+@interface BFTask (ParseFacebookUtils)
+
+- (instancetype)pffb_continueWithMainThreadUserBlock:(PFUserResultBlock)block;
+- (instancetype)pffb_continueWithMainThreadBooleanBlock:(PFBooleanResultBlock)block;
+- (instancetype)pffb_continueWithMainThreadBlock:(BFContinuationBlock)block;
+
+@end
+
+@interface NSError (ParseFacebookUtils)
+
++ (instancetype)pffb_invalidFacebookSessionError;
+
+@end
+
+@interface NSDateFormatter (ParseFacebookUtils)
+
++ (instancetype)pffb_preciseDateFormatter;
 
 @end
 

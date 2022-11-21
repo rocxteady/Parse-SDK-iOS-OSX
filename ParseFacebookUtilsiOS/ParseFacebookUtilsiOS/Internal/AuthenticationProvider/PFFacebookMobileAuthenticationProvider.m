@@ -27,10 +27,10 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
-#if __has_include(<ParseFacebookUtilsV4/PFFacebookPrivateUtilities.h>)
-#import <ParseFacebookUtilsV4/PFFacebookPrivateUtilities.h>
+#if __has_include(<ParseFacebookUtilsV4/PFFacebookUtils.h>)
+#import <ParseFacebookUtilsV4/PFFacebookUtils.h>
 #else
-#import "PFFacebookPrivateUtilities.h"
+#import "PFFacebookUtils.h"
 #endif
 
 @implementation PFFacebookMobileAuthenticationProvider
@@ -66,7 +66,7 @@
         } else if (error) {
             taskCompletionSource.error = error;
         } else {
-            taskCompletionSource.result = [PFFacebookPrivateUtilities userAuthenticationDataFromAccessToken:result.token];
+            taskCompletionSource.result = [PFFacebookUtils userAuthenticationDataFromAccessToken:result.token];
         }
     };
     

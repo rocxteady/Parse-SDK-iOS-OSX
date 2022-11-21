@@ -21,10 +21,10 @@
 #import <FBSDKCoreKit/FBSDKConstants.h>
 #import <FBSDKTVOSKit/FBSDKDeviceLoginViewController.h>
 
-#if __has_include(<ParseFacebookUtilsV4/PFFacebookPrivateUtilities.h>)
-#import <ParseFacebookUtilsV4/PFFacebookPrivateUtilities.h>
+#if __has_include(<ParseFacebookUtilsV4/PFFacebookUtils.h>)
+#import <ParseFacebookUtilsV4/PFFacebookUtils.h>
 #else
-#import "PFFacebookPrivateUtilities.h"
+#import "PFFacebookUtils.h"
 #endif
 
 @interface PFFacebookDeviceAuthenticationProvider () <FBSDKDeviceLoginViewControllerDelegate> {
@@ -84,7 +84,7 @@
 
 - (void)deviceLoginViewControllerDidFinish:(FBSDKDeviceLoginViewController *)viewController {
     FBSDKAccessToken *accessToken = [FBSDKAccessToken currentAccessToken];
-    NSDictionary<NSString *,NSString*> *result = [PFFacebookPrivateUtilities userAuthenticationDataFromAccessToken:accessToken];
+    NSDictionary<NSString *,NSString*> *result = [PFFacebookUtils userAuthenticationDataFromAccessToken:accessToken];
     [_loginTaskCompletionSource trySetResult:result];
     _loginViewController = nil;
     _loginTaskCompletionSource = nil;

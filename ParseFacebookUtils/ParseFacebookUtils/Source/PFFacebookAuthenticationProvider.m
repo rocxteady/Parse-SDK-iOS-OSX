@@ -11,7 +11,7 @@
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 
-#import "PFFacebookPrivateUtilities.h"
+#import "PFFacebookUtils.h"
 
 NSString *const PFFacebookUserAuthenticationType = @"facebook";
 
@@ -45,7 +45,7 @@ NSString *const PFFacebookUserAuthenticationType = @"facebook";
                                                                      publishPermissions:(nullable NSArray<NSString *> *)publishPermissions {
     return [self authenticateAsyncWithReadPermissions:readPermissions
                                    publishPermissions:publishPermissions
-                                   fromViewComtroller:[PFFacebookPrivateUtilities applicationTopViewController]];
+                                   fromViewComtroller:[PFFacebookUtils applicationTopViewController]];
 }
 
 - (BFTask<NSDictionary<NSString *, NSString *>*> *)authenticateAsyncWithReadPermissions:(nullable NSArray<NSString *> *)readPermissions
@@ -59,7 +59,7 @@ NSString *const PFFacebookUserAuthenticationType = @"facebook";
 ///--------------------------------------
 
 - (BOOL)restoreAuthenticationWithAuthData:(nullable NSDictionary<NSString *, NSString *> *)authData {
-    FBSDKAccessToken *token = [PFFacebookPrivateUtilities facebookAccessTokenFromUserAuthenticationData:authData];
+    FBSDKAccessToken *token = [PFFacebookUtils facebookAccessTokenFromUserAuthenticationData:authData];
     if (!token) {
         return !authData; // Only deauthenticate if authData was nil, otherwise - return failure (`NO`).
     }

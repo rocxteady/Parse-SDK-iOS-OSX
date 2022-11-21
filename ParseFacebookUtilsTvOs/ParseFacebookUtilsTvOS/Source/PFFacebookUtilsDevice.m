@@ -21,10 +21,10 @@
 #import "Parse.h"
 #endif
 
-#if __has_include(<ParseFacebookUtilsV4/PFFacebookPrivateUtilities.h>)
-#import <ParseFacebookUtilsV4/PFFacebookPrivateUtilities.h>
+#if __has_include(<ParseFacebookUtilsV4/PFFacebookUtils.h>)
+#import <ParseFacebookUtilsV4/PFFacebookUtils.h>
 #else
-#import "PFFacebookPrivateUtilities.h"
+#import "PFFacebookUtils.h"
 #endif
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
