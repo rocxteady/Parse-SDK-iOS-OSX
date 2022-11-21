@@ -50,6 +50,8 @@
 		7C605D25292A953700E4B6D2 /* PFCoreLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C605D19292A953700E4B6D2 /* PFCoreLocalization.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7C605D26292A953700E4B6D2 /* PFCoreLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C605D19292A953700E4B6D2 /* PFCoreLocalization.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7C605D27292A953700E4B6D2 /* PFCoreLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C605D19292A953700E4B6D2 /* PFCoreLocalization.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7C605FED292BC58300E4B6D2 /* PFFileDataStream.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B0C4F21BA248F7000AB0D5 /* PFFileDataStream.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7C605FF7292BC58C00E4B6D2 /* PFFileDataStream.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B0C4F21BA248F7000AB0D5 /* PFFileDataStream.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7C6174CC291F177E00522D71 /* PFFileUploadResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C61748B291F176500522D71 /* PFFileUploadResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C6174CD291F177E00522D71 /* PFPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C6174B8291F176500522D71 /* PFPolygon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C6174CE291F177E00522D71 /* PFRelation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C617496291F176500522D71 /* PFRelation.m */; };
@@ -5415,6 +5417,7 @@
 				7C617646291F178100522D71 /* PFProduct.h in Headers */,
 				810156181BB3832700D7C7BD /* PFSQLiteStatement.h in Headers */,
 				810156191BB3832700D7C7BD /* PFURLSessionCommandRunner.h in Headers */,
+				7C605FED292BC58300E4B6D2 /* PFFileDataStream.h in Headers */,
 				8101561A1BB3832700D7C7BD /* PFRESTObjectCommand.h in Headers */,
 				8101561B1BB3832700D7C7BD /* PFCommandRunning.h in Headers */,
 				8101561C1BB3832700D7C7BD /* PFRESTCloudCommand.h in Headers */,
@@ -6406,6 +6409,7 @@
 				7C61769D291F178200522D71 /* PFAnalytics.h in Headers */,
 				81C5864F1C3B0AA9000063C6 /* PFRESTAnalyticsCommand.h in Headers */,
 				81C586511C3B0AA9000063C6 /* PFHTTPURLRequestConstructor.h in Headers */,
+				7C605FF7292BC58C00E4B6D2 /* PFFileDataStream.h in Headers */,
 				7C617688291F178200522D71 /* PFConstants.h in Headers */,
 				81C586521C3B0AA9000063C6 /* PFDefaultACLController.h in Headers */,
 				81C586541C3B0AA9000063C6 /* PFACLPrivate.h in Headers */,

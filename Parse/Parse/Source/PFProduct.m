@@ -6,6 +6,9 @@
  * LICENSE file in the root directory of this source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  */
+#import "PFConstants.h"
+
+#if TARGET_OS_IOS || TARGET_OS_TV
 
 #import "PFProduct.h"
 #import "PFProduct+Private.h"
@@ -46,3 +49,5 @@
 @dynamic progress;
 
 @end
+
+#endif
