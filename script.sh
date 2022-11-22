@@ -1,9 +1,9 @@
 command=${1}
-#valid commands: run_tests, create_frameworks, clean
+#valid commands: run_tests, debug, create_frameworks, clean
 
 if [ -z $command ]; then
     command=create_frameworks
-elif [ $command != run_tests ] && [ $command != create_frameworks ] && [ $command != clean ]; then
+elif [ $command != run_tests ] && [ $command != debug ] && [ $command != create_frameworks ] && [ $command != clean ]; then
     echo "Not a valid command: ${command}"
     exit 1
 fi
@@ -84,16 +84,65 @@ create_xcframeworks() {
     -output build/Frameworks/${framework}.xcframework
 }
 
+fetch_facebook_dependencies() {
+    if [ ! -d build/Frameworks ]; then
+    mkdir build/Frameworks
+    fi
+
+    cd build/Frameworks
+
+    if [ ! -d "FBSDKCoreKit.xcframework" ] || [ ! -d "FBSDKLoginKit.xcframework" ] || [ ! -d "FBSDKCoreKit_Basics.xcframework" ] || [ ! -d "FBAEMKit.xcframework" ] || [ ! -d "FBSDKTVOSKit.xcframework" ]; then
+        ARCHIVE_NAME=FBSDK.zip
+
+        ARCHIVE_URL="https://github.com/facebook/facebook-ios-sdk/releases/download/v15.1.0/FacebookSDK-Static_XCFramework.zip"
+        curl -Lk $ARCHIVE_URL -o $ARCHIVE_NAME
+
+        unzip $ARCHIVE_NAME -d fbsdk
+        rm -rf FBSDKCoreKit.xcframework
+        rm -rf FBSDKLoginKit.xcframework
+        rm -rf FBSDKCoreKit_Basics.xcframework
+        rm -rf FBAEMKit.xcframework
+        rm -rf FBSDKTVOSKit.xcframework
+
+        mv fbsdk/XCFrameworks/FBSDKCoreKit.xcframework .
+        mv fbsdk/XCFrameworks/FBSDKLoginKit.xcframework .
+        mv fbsdk/XCFrameworks/FBSDKCoreKit_Basics.xcframework .
+        mv fbsdk/XCFrameworks/FBAEMKit.xcframework .
+        mv fbsdk/XCFrameworks/FBSDKTVOSKit.xcframework .
+
+        rm $ARCHIVE_NAME
+        rm -r fbsdk
+        cd ../..
+    fi
+}
+
 #clean
 clean() {
-    build Parse-iOS Release iphonesimulator clean
-    build Parse-iOS Release iphoneos clean
-    build Parse-iOS Release catalyst clean
-    build Parse-macOS Release macosx clean
-    build Parse-tvOS Release appletvsimulator clean
-    build Parse-tvOS Release appletvos clean
-    build Parse-watchOS Release watchsimulator clean
-    build Parse-watchOS Release watchos clean
+    rm -rf build
+}
+
+#create frameworks
+debug() {
+    build Parse-iOS Debug iphonesimulator
+    build Parse-iOS Debug iphoneos
+    build Parse-iOS Debug catalyst
+    build Parse-macOS Debug macosx
+    build Parse-tvOS Debug appletvsimulator
+    build Parse-tvOS Debug appletvos
+    build Parse-watchOS Debug watchsimulator
+    build Parse-watchOS Debug watchos
+
+    build ParseFacebookUtilsiOS Debug iphonesimulator
+    build ParseFacebookUtilsiOS Debug iphoneos
+
+    build ParseFacebookUtilsTvOS Debug appletvsimulator
+    build ParseFacebookUtilsTvOS Debug appletvos
+
+    build ParseFacebookUtilsTvOS Debug appletvsimulator
+    build ParseFacebookUtilsTvOS Debug appletvos
+
+    build ParseUI Debug iphonesimulator
+    build ParseUI Debug iphoneos
 }
 
 #create frameworks
@@ -170,10 +219,13 @@ create_frameworks() {
     create_framework_for_facebook_tvos
     create_framework_for_twitter
     create_framework_for_parseui
+    fetch_facebook_dependencies
 }
 
 if [ $command == run_tests ]; then
     run_tests
+elif [ $command == debug ]; then
+    debug
 elif [ $command == create_frameworks ]; then
     create_frameworks
 elif [ $command == clean ]; then
