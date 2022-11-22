@@ -1,63 +1,53 @@
-# xcodebuild -workspace Parse.xcworkspace \
-# -scheme Parse-iOS \
-# -configuration Debug \
-# -sdk iphonesimulator \
-# -derivedDataPath Build/Parse
+build() {
+    scheme=${1}
+    configuration=${2}
+    os=${3}
 
-xcodebuild -workspace Parse.xcworkspace \
--scheme Parse-iOS \
--configuration Release \
--sdk iphonesimulator \
--derivedDataPath Build/Parse
+    params=()
+    if [ $os == catalyst ]; then
+    params+=(SUPPORTS_MACCATALYST=YES)
+    os=macosx
+    fi
+    
+    xcodebuild -workspace Parse.xcworkspace \
+    -scheme ${scheme} \
+    -configuration ${configuration} \
+    -sdk ${os} \
+    -derivedDataPath Build/Parse \
+    ONLY_ACTIVE_ARCH=NO "${params[@]}"
+}
 
-# xcodebuild -workspace Parse.xcworkspace \
-# -scheme Parse-iOS \
-# -configuration Debug \
-# -sdk iphoneos \
-# -derivedDataPath Build/Parse
+create_xcframeworks() {
+    configuration=${1}
+    path=Build/Parse/Build/Products/${configuration}
+    xcodebuild -create-xcframework \
+    -framework ${path}/Parse.framework \
+    -framework ${path}-appletvos/Parse.framework \
+    -framework ${path}-appletvsimulator/Parse.framework \
+    -framework ${path}-iphoneos/Parse.framework \
+    -framework ${path}-iphonesimulator/Parse.framework \
+    -framework ${path}-maccatalyst/Parse.framework \
+    -framework ${path}-watchos/Parse.framework \
+    -framework ${path}-watchsimulator/Parse.framework \
+    -output Build/Parse.xcframework
+    # rm -rf Build/Parse
+}
 
-# xcodebuild -workspace Parse.xcworkspace \
-# -scheme Parse-iOS \
-# -configuration Release \
-# -sdk iphoneos \
-# -derivedDataPath Build/Parse
+create_bolts_xcframeworks() {
+    configuration=${1}
+    path=Build/Parse/Build/Products/${configuration}
+    xcodebuild -create-xcframework \
+    -framework ${path}/Bolts.framework \
+    -framework ${path}-appletvos/Bolts.framework \
+    -framework ${path}-appletvsimulator/Bolts.framework \
+    -framework ${path}-iphoneos/Bolts.framework \
+    -framework ${path}-iphonesimulator/Bolts.framework \
+    -framework ${path}-maccatalyst/Bolts.framework \
+    -framework ${path}-watchos/Bolts.framework \
+    -framework ${path}-watchsimulator/Bolts.framework \
+    -output Build/Bolts.xcframework
+    # rm -rf Build/Parse
+}
 
-# xcodebuild -workspace Parse.xcworkspace \
-# -scheme Parse-iOS \
-# -configuration Debug \
-# -sdk macosx \
-# -derivedDataPath Build/Parse \
-# SUPPORTS_MACCATALYST=YES
-
-# xcodebuild -workspace Parse.xcworkspace \
-# -scheme Parse-iOS \
-# -configuration Release \
-# -sdk macosx \
-# -derivedDataPath Build/Parse \
-# SUPPORTS_MACCATALYST=YES
-
-# xcodebuild -workspace Parse.xcworkspace \
-# -scheme Parse-iOS \
-# -configuration Debug \
-# -sdk macosx \
-# -derivedDataPath Build/Parse \
-# SUPPORTS_MACCATALYST=YES ONLY_ACTIVE_ARCH=NO
-
-# xcodebuild -workspace Parse.xcworkspace \
-# -scheme Parse-iOS \
-# -configuration Release \
-# -sdk macosx \
-# -derivedDataPath Build/Parse \
-# SUPPORTS_MACCATALYST=YES ONLY_ACTIVE_ARCH=NO
-
-# xcodebuild -workspace Parse.xcworkspace \
-# -scheme Parse-macOS \
-# -configuration Debug \
-# -sdk macosx \
-# -derivedDataPath Build/Parse \
-
-# xcodebuild -workspace Parse.xcworkspace \
-# -scheme Parse-macOS \
-# -configuration Release \
-# -sdk macosx \
-# -derivedDataPath Build/Parse \
+# create_xcframeworks Release
+create_bolts_xcframeworks Release
