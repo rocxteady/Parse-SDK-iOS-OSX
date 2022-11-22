@@ -43,6 +43,7 @@
 		7C77D04F292913EC00C4D90E /* FBSDKLoginKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C77D046292913CF00C4D90E /* FBSDKLoginKit.xcframework */; };
 		7C77D0512929156900C4D90E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C77D0502929156900C4D90E /* libc++.tbd */; };
 		7C77D0532929157600C4D90E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C77D0522929157600C4D90E /* Accelerate.framework */; };
+		7CD81D17292D16DC0074F64D /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5F7E5D29210E590035B219 /* ParseFacebookUtilsV4.framework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -237,6 +238,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CD81D17292D16DC0074F64D /* ParseFacebookUtilsV4.framework in Frameworks */,
 				7C5F7EE229211E870035B219 /* Accelerate.framework in Frameworks */,
 				7C5F7EE029211E6E0035B219 /* AudioToolbox.framework in Frameworks */,
 				7C5F7EDE29211E6A0035B219 /* SystemConfiguration.framework in Frameworks */,

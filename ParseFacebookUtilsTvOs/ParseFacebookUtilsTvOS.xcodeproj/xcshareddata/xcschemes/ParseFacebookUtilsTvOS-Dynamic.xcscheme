@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F535C73A1B54B4A800A7D81E"
-               BuildableName = "ParseFacebookTestApplication.app"
-               BlueprintName = "ParseFacebookTestApplication"
-               ReferencedContainer = "container:ParseFacebookUtilsiOS.xcodeproj">
+               BlueprintIdentifier = "4AAEAA77200C022300AA7479"
+               BuildableName = "ParseFacebookUtilsTvOS.framework"
+               BlueprintName = "ParseFacebookUtilsTvOS-Dynamic"
+               ReferencedContainer = "container:ParseFacebookUtilsTvOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,16 +40,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F535C73A1B54B4A800A7D81E"
-            BuildableName = "ParseFacebookTestApplication.app"
-            BlueprintName = "ParseFacebookTestApplication"
-            ReferencedContainer = "container:ParseFacebookUtilsiOS.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -57,16 +47,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F535C73A1B54B4A800A7D81E"
-            BuildableName = "ParseFacebookTestApplication.app"
-            BlueprintName = "ParseFacebookTestApplication"
-            ReferencedContainer = "container:ParseFacebookUtilsiOS.xcodeproj">
+            BlueprintIdentifier = "4AAEAA77200C022300AA7479"
+            BuildableName = "ParseFacebookUtilsTvOS.framework"
+            BlueprintName = "ParseFacebookUtilsTvOS-Dynamic"
+            ReferencedContainer = "container:ParseFacebookUtilsTvOS.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
