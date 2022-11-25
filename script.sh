@@ -84,36 +84,12 @@ create_xcframeworks() {
     -output build/Frameworks/${framework}.xcframework
 }
 
-fetch_facebook_dependencies() {
-    if [ ! -d build/Frameworks ]; then
-    mkdir build/Frameworks
-    fi
-
-    cd build/Frameworks
-
-    if [ ! -d "FBSDKCoreKit.xcframework" ] || [ ! -d "FBSDKLoginKit.xcframework" ] || [ ! -d "FBSDKCoreKit_Basics.xcframework" ] || [ ! -d "FBAEMKit.xcframework" ] || [ ! -d "FBSDKTVOSKit.xcframework" ]; then
-        ARCHIVE_NAME=FBSDK.zip
-
-        ARCHIVE_URL="https://github.com/facebook/facebook-ios-sdk/releases/download/v15.1.0/FacebookSDK-Static_XCFramework.zip"
-        curl -Lk $ARCHIVE_URL -o $ARCHIVE_NAME
-
-        unzip $ARCHIVE_NAME -d fbsdk
-        rm -rf FBSDKCoreKit.xcframework
-        rm -rf FBSDKLoginKit.xcframework
-        rm -rf FBSDKCoreKit_Basics.xcframework
-        rm -rf FBAEMKit.xcframework
-        rm -rf FBSDKTVOSKit.xcframework
-
-        mv fbsdk/XCFrameworks/FBSDKCoreKit.xcframework .
-        mv fbsdk/XCFrameworks/FBSDKLoginKit.xcframework .
-        mv fbsdk/XCFrameworks/FBSDKCoreKit_Basics.xcframework .
-        mv fbsdk/XCFrameworks/FBAEMKit.xcframework .
-        mv fbsdk/XCFrameworks/FBSDKTVOSKit.xcframework .
-
-        rm $ARCHIVE_NAME
-        rm -r fbsdk
-        cd ../..
-    fi
+copy_facebook_dependencies() {
+    cp -r Carthage/Build/FBSDKCoreKit.xcframework build/Frameworks
+    cp -r Carthage/Build/FBSDKLoginKit.xcframework build/Frameworks
+    cp -r Carthage/Build/FBSDKCoreKit_Basics.xcframework build/Frameworks
+    cp -r Carthage/Build/FBAEMKit.xcframework build/Frameworks
+    cp -r Carthage/Build/FBSDKTVOSKit.xcframework build/Frameworks
 }
 
 #clean
@@ -214,12 +190,12 @@ run_tests() {
 }
 
 create_frameworks() {
-    create_framework_for_parse
-    create_framework_for_facebook_ios
-    create_framework_for_facebook_tvos
-    create_framework_for_twitter
-    create_framework_for_parseui
-    fetch_facebook_dependencies
+    # create_framework_for_parse
+    # create_framework_for_facebook_ios
+    # create_framework_for_facebook_tvos
+    # create_framework_for_twitter
+    # create_framework_for_parseui
+    copy_facebook_dependencies
 }
 
 if [ $command == run_tests ]; then
